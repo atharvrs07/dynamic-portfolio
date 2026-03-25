@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,7 +49,7 @@
             </div>
             <div class="dashboard-item-actions">
               <a href="/<%= item.slug %>" class="btn btn-ghost">Open</a>
-              <a href="/portfolio/<%= item.portfolioId %>/edit" class="btn btn-ghost">Edit</a>
+              <a href="<%= item.portfolioId %>edit-portfolio.ejs" class="btn btn-ghost">Edit</a>
             </div>
           </article>
           <% }) %>
@@ -60,66 +59,3 @@
     </main>
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | LiquiLink</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body class="dashboard-page">
-    <div class="aurora aurora--one"></div>
-    <div class="aurora aurora--two"></div>
-
-    <main class="container dashboard-wrap">
-      <section class="dashboard-card">
-        <div class="dashboard-top">
-          <div>
-            <p class="eyebrow">Dashboard</p>
-            <h1>Your generated portfolios</h1>
-            <p class="hero-text">
-              Welcome, <%= currentUser ? currentUser.fullName : "User" %>. Manage and open your existing portfolio links.
-            </p>
-          </div>
-          <div class="dashboard-actions">
-            <a href="/form.html" class="btn btn-primary">Create New Portfolio</a>
-            <form action="/logout" method="POST">
-              <button type="submit" class="btn btn-ghost">Logout</button>
-            </form>
-          </div>
-        </div>
-
-        <% if (!portfolios.length) { %>
-        <div class="empty-state">
-          <p>No portfolios yet. Create your first one now.</p>
-        </div>
-        <% } else { %>
-        <div class="dashboard-list">
-          <% portfolios.forEach((item) => { %>
-          <article class="dashboard-item">
-            <div>
-              <h3><%= item.fullName %></h3>
-              <p class="muted-line"><%= item.role %></p>
-              <p class="muted-line">URL: /<%= item.slug %></p>
-            </div>
-            <div class="dashboard-item-actions">
-              <a href="/<%= item.slug %>" class="btn btn-ghost">Open</a>
-              <a href="/portfolio/<%= item.portfolioId %>/edit" class="btn btn-ghost">Edit</a>
-            </div>
-          </article>
-          <% }) %>
-        </div>
-        <% } %>
-      </section>
-    </main>
-  </body>
-</html>
->>>>>>> 85ad455aadadc37dd511f640211012db169d51a5
