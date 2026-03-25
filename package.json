@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "dynamic-portfolio-app",
   "version": "1.0.0",
@@ -17,3 +18,24 @@
     "nanoid": "^3.3.8"
   }
 }
+=======
+{
+  "name": "dynamic-portfolio-app",
+  "version": "1.0.0",
+  "description": "Dynamic portfolio generator with Node.js and file database",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "lowdb": "^1.0.0",
+    "nanoid": "^3.3.8"
+  }
+}
+>>>>>>> 85ad455aadadc37dd511f640211012db169d51a5
