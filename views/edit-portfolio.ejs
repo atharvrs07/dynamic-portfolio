@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Portfolio | LiquiLink</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="form-page">
+    <div class="aurora aurora--one"></div>
+    <div class="aurora aurora--two"></div>
+    <main class="container form-wrap">
+      <section class="form-card">
+        <div class="form-topbar">
+          <p class="form-user">Editing: <%= portfolio.fullName %></p>
+          <a href="/dashboard" class="btn btn-ghost">Back to dashboard</a>
+        </div>
+
+        <p class="eyebrow">Edit Portfolio</p>
+        <h1>Update your portfolio content and style</h1>
+
+        <form action="/portfolio/<%= portfolio.portfolioId %>/edit" method="POST" class="portfolio-form">
+          <div class="grid-2">
+            <label>
+              Full Name
+              <input type="text" name="fullName" value="<%= portfolio.fullName %>" required />
+            </label>
+            <label>
+              Role
+              <input type="text" name="role" value="<%= portfolio.role %>" required />
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label>
+              Theme
+              <select name="theme">
+                <option value="dark" <%= portfolio.theme === "dark" ? "selected" : "" %>>Dark</option>
+                <option value="light" <%= portfolio.theme === "light" ? "selected" : "" %>>Light</option>
+              </select>
+            </label>
+            <label>
+              Layout
+              <select name="layoutVariant">
+                <option value="default" <%= portfolio.layoutVariant === "default" ? "selected" : "" %>>
+                  Default (About -> Projects -> Experience)
+                </option>
+                <option value="hero-reverse" <%= portfolio.layoutVariant === "hero-reverse" ? "selected" : "" %>>
+                  Hero Reversed
+                </option>
+                <option value="projects-first" <%= portfolio.layoutVariant === "projects-first" ? "selected" : "" %>>
+                  Projects First
+                </option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Headline
+            <input type="text" name="headline" value="<%= portfolio.headline %>" required />
+          </label>
+
+          <label>
+            Hero Description
+            <textarea name="heroText" rows="3" required><%= portfolio.heroText %></textarea>
+          </label>
+
+          <div class="grid-2">
+            <label>
+              Shipping Label
+              <input type="text" name="shippingTitle" value="<%= portfolio.shippingTitle %>" />
+            </label>
+            <label>
+              Shipping Heading
+              <input type="text" name="shippingHeading" value="<%= portfolio.shippingHeading %>" />
+            </label>
+          </div>
+
+          <label>
+            Shipping Description
+            <textarea name="shippingDescription" rows="3"><%= portfolio.shippingDescription %></textarea>
+          </label>
+
+          <label>
+            Shipping Bullet Points (one per line)
+            <textarea name="shippingPoints" rows="3"><%= portfolio.shippingPointsText %></textarea>
+          </label>
+
+          <label>
+            About Cards (format: title | description, one per line)
+            <textarea name="aboutCards" rows="4"><%= portfolio.aboutCardsText %></textarea>
+          </label>
+
+          <label>
+            Projects (format: title | platform | description, one per line)
+            <textarea name="projects" rows="5"><%= portfolio.projectsText %></textarea>
+          </label>
+
+          <label>
+            Experience (format: period | title | description, one per line)
+            <textarea name="experiences" rows="5"><%= portfolio.experiencesText %></textarea>
+          </label>
+
+          <div class="grid-2">
+            <label>
+              Email
+              <input type="email" name="email" value="<%= portfolio.email %>" />
+            </label>
+            <label>
+              LinkedIn URL
+              <input type="url" name="linkedin" value="<%= portfolio.linkedin %>" />
+            </label>
+            <label>
+              YouTube URL
+              <input type="url" name="youtube" value="<%= portfolio.youtube %>" />
+            </label>
+            <label>
+              Instagram URL
+              <input type="url" name="instagram" value="<%= portfolio.instagram %>" />
+            </label>
+            <label>
+              Twitter/X URL
+              <input type="url" name="twitter" value="<%= portfolio.twitter %>" />
+            </label>
+            <label>
+              GitHub URL
+              <input type="url" name="github" value="<%= portfolio.github %>" />
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i>
+            Save Changes
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
