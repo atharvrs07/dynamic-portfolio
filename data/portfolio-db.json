@@ -1,6 +1,84 @@
 {
   "portfolios": [
     {
+      "id": "adarsh-sharma",
+      "portfolioId": "z5wuhlpo",
+      "slug": "adarsh-sharma",
+      "ownerUserId": "4u67bn86",
+      "ownerEmail": "cfpadarsh@gmail.com",
+      "creatorEmail": "cfpadarsh@gmail.com",
+      "createdAt": "2026-03-25T13:29:58.222Z",
+      "fullName": "Adarsh Sharma",
+      "role": "Certified Financial Planner",
+      "headline": "Managing your wealth and family portfolios",
+      "heroText": "I manage your wealth, and family portfolios, since I'm a CFP, I'll help you and guide you with everything related to financial planning you want.",
+      "shippingTitle": "Now giving",
+      "shippingHeading": "Apple Ecosystem Features",
+      "shippingDescription": "Helping you with every step of your life, step by step",
+      "shippingPoints": [
+        "Trusted by many customers.",
+        "Many clients internationally.",
+        "AUM of 16+ Cr."
+      ],
+      "aboutCards": [
+        {
+          "title": "Design + Code",
+          "description": "I bridge product, design, and engineering to deliver interfaces that are intuitive, beautiful, and technically robust."
+        },
+        {
+          "title": "Performance Obsessed",
+          "description": "From launch-time optimization to fluid animations, I focus on measurable quality and polished user interactions."
+        },
+        {
+          "title": "Mentorship",
+          "description": "I mentor teams on architecture, UI craftsmanship, and modern app standards across Apple platforms."
+        }
+      ],
+      "projects": [
+        {
+          "title": "Health Insight Dashboard",
+          "platform": "iOS",
+          "description": "Developed a real-time health analytics interface with dynamic charts, meaningful animations, and robust offline behavior."
+        },
+        {
+          "title": "Creative Workspace Suite",
+          "platform": "macOS",
+          "description": "Built a modular productivity suite with seamless continuity and advanced keyboard-first workflow optimization."
+        },
+        {
+          "title": "Spatial Interaction Lab",
+          "platform": "visionOS",
+          "description": "Prototyped immersive UI patterns for spatial computing, focusing on depth, gesture feedback, and intuitive navigation."
+        }
+      ],
+      "experiences": [
+        {
+          "period": "2022 - Present",
+          "title": "Senior Developer, Apple",
+          "description": "Leading feature engineering initiatives across flagship consumer apps and driving performance standards across teams."
+        },
+        {
+          "period": "2019 - 2022",
+          "title": "Software Engineer, Product Innovation",
+          "description": "Delivered next-generation interaction patterns and collaborated on design systems for multi-device consistency."
+        },
+        {
+          "period": "2016 - 2019",
+          "title": "Frontend Engineer, Creative Tech Studio",
+          "description": "Built premium digital experiences for global brands, emphasizing craftsmanship, motion, and performance."
+        }
+      ],
+      "email": "cfpadarsh@gmail.com",
+      "linkedin": "",
+      "youtube": "",
+      "instagram": "",
+      "twitter": "",
+      "github": "",
+      "theme": "light",
+      "layoutVariant": "hero-reverse",
+      "updatedAt": "2026-03-25T16:13:23.349Z"
+    },
+    {
       "id": "atharv-raj-sharma",
       "slug": "atharv-raj-sharma",
       "createdAt": "2026-03-24T14:40:30.167Z",
@@ -80,16 +158,45 @@
       "twitter": "https://x.com/atharvrs2010",
       "github": "https://github.com/atharvrs07",
       "ownerUserId": "uoll2tme",
-      "ownerEmail": "atharvrs2010@gmail.com"
+      "ownerEmail": "atharvrs2010@gmail.com",
+      "portfolioId": "emzfhqyk",
+      "theme": "light",
+      "layoutVariant": "hero-reverse",
+      "updatedAt": "2026-03-25T16:19:34.407Z"
     }
   ],
   "users": [
+    {
+      "id": "u7db5exe",
+      "fullName": "Test Account",
+      "email": "test@mail.com",
+      "passwordHash": "$2a$10$P3YF48bEu736lI3evh07K.xamBKeBJtBxS09dP1j107M37zOA8LAG",
+      "createdAt": "2026-03-25T16:15:53.099Z",
+      "plan": "basic",
+      "planStatus": "inactive",
+      "planExpiresAt": null
+    },
+    {
+      "id": "4u67bn86",
+      "fullName": "Adarsh Sharma",
+      "email": "cfpadarsh@gmail.com",
+      "passwordHash": "$2a$10$S2V.vPPbH9TbQLTiYt9w9.RjtcqfJlHqCD7AUwFC9V210NVjFk2iy",
+      "createdAt": "2026-03-25T13:27:17.284Z",
+      "plan": "pro",
+      "planStatus": "active",
+      "proActivatedAt": "2026-03-25T16:13:17.101Z",
+      "planExpiresAt": "2026-04-24T16:13:17.101Z"
+    },
     {
       "id": "uoll2tme",
       "fullName": "Atharv Raj Sharma",
       "email": "atharvrs2010@gmail.com",
       "passwordHash": "$2a$10$MYltKo7ipnyHOlmd7x5vHu9rl33f/fQ/OjSOG1Ev7ONKGV/6DrkaG",
-      "createdAt": "2026-03-24T14:15:58.838Z"
+      "createdAt": "2026-03-24T14:15:58.838Z",
+      "plan": "pro",
+      "planStatus": "active",
+      "proActivatedAt": "2026-03-25T16:04:24.005Z",
+      "planExpiresAt": "2026-04-24T16:04:24.005Z"
     }
   ]
 }
